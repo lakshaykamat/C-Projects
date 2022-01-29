@@ -1,16 +1,9 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int days;
-    int hours;
-    int min;
-    int sec;
+    int days, hours, min, sec;
     long long int milisec;
-    float week;
-    float year;
-    float month;
-    float decade;
-    float century;
+    float week, year, month, decade, century;
 
     printf("Enter days:\n");
     scanf("%d", &days);
@@ -22,8 +15,8 @@ int main(int argc, char const *argv[])
     week = days / 7.0f;
     month = days / 30.417f;
     year = days / 365.0f;
-    decade = days/3650.0f;
-    century = days/36500.0f;
+    decade = days / 3650.0f;
+    century = days / 36500.0f;
 
     printf("In %d", days);
     printf(" Days ");

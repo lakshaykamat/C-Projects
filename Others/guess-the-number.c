@@ -6,7 +6,7 @@ int main()
 {
     int number, guess, nguess = 1;
     srand(time(0));
-    number = rand() % 100 + 1;
+    number = rand() % 100 + 1; //Generates Random Number between 1 to 100
     // printf("The number is = %d", number);
 
     do
@@ -23,7 +23,7 @@ int main()
         }
         else
         {
-            printf("You wins in %d attempts.\n",nguess);
+            printf("You wins in %d attempts.\n",nguess); // show attempts to user
         }
         nguess++;
     } while (guess != number);

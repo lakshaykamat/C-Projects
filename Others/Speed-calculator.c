@@ -4,7 +4,12 @@ int main()
 {
     double speed;
     int input;
-    printf("1. Miles per hour \n2. Kilometre per hour\n3. Foot per second\n4. Metre per second\n5. Knots\n\nChoose any one in 1,2,3,4 & 5:");
+    printf("1. Miles per hour\n");
+    printf("2. Kilometre per hour \n");
+    printf("3. Foot per second\n");
+    printf("4. Metre per second\n");
+    printf("5. Knots\n");
+    printf("Choose any one in 1,2,3,4 & 5:");
     scanf("%d", &input);
 
     if (input == 1)
