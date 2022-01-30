@@ -16,7 +16,7 @@ int main()
     //Math.h function added  of power NOTE pow function data type is double %.0lf
 
 
-    //Alternate Type
+    //Alternate Type Method
     // for (int i = 1; i <= pow; i++)
     // {
     //     sum = sum * input;
