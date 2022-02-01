@@ -9,7 +9,9 @@ int main()
     int number;
     printf("Enter the number = ");
     scanf("%d", &number);
+
     int a = sumfinder(number);
+    
     printf("The sum %d is %d",number,a);
     return 0;
 }
