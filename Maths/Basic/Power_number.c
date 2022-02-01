@@ -23,5 +23,18 @@ int main()
     //     
     // }
     // printf("%d to the power %d is = %d", input, pow, sum);
+       
+        /*
+        let input = 3
+        i = 1
+        let pow = 2 (1<=2) yes
+        i++ 
+        3 = 1 * 3
+
+        Now,Sum = 3
+        i = 2 (2<=2) yes 
+        9 = 3 * 3
+        
+        */
     return 0;
 }
