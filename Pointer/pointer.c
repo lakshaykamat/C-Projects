@@ -15,7 +15,7 @@ int main()
     // printf("The value of a is %d\n", *ptra); //Gives value of a that is 76
     // printf("The value of a is %d\n", a); //Gives value of a that is 76
 
-//********************************************************Next*********************************************************
+//******************************************************Next*********************************************************
     char a = '3'; //char stores 1 byte
     char* ptra = &a; //stores address of a
     printf("Prints Address of A %d\n\n", ptra); //prints address of a
