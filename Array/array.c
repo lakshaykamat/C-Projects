@@ -4,7 +4,7 @@ int main()
 {
     int marks[4];//array starts from 0 ex-[0,1,2,3,4]
     printf("Enter your Marks in Sub 1 = ");
-    scanf("%d",&marks[0]);//Store value of array
+    scanf("%d",&marks[0]);//Store value of array at 0
     printf("Enter your Marks in Sub 2 = ");
     scanf("%d",&marks[1]);
     printf("Enter your Marks in Sub 3 = ");
@@ -14,7 +14,7 @@ int main()
     printf("Enter your Marks in Sub 5 = ");
     scanf("%d",&marks[4]);
 
-    printf("Your marks in Sub 1 = %d\n",marks[0]);//Printing value of array
+    printf("Your marks in Sub 1 = %d\n",marks[0]);//Printing value of array of 0
     printf("Your marks Sub 2 = %d\n",marks[1]);
     printf("Your marks Sub 3 = %d\n",marks[2]);
     printf("Your marks Sub 4= %d\n",marks[3]);
