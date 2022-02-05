@@ -9,7 +9,7 @@ int fibo(int num)
         n0 = n1;     // n0 = 1 // 1  = 1 
         n1 = a;      // 1 = 1
        printf("%d ", a);
-        // return a;
+        return a;
     }
 }
 int main()
