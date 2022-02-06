@@ -17,31 +17,41 @@ int main()
 
 //******************************************************Next*********************************************************
     char a = '3'; //char stores 1 byte
+
     char* ptra = &a; //stores address of a
+
     printf("Prints Address of A %d\n\n", ptra); //prints address of a
+
     ptra--; //Decrement of address of A ex- 45893 - 1 = 45892 (1 is size of char data types)
-    printf("Decrement address by 2 from A %d\n\n", ptra); //prints after dcrementing
+
+    printf("Decrement address by 2 from A %d\n\n", ptra); //prints address after dcrementing
     printf("Subtract 2 from address of A %d\n\n", ptra-2); //Decrementing 2 from address
 
 
     int arr[] = {311,52,3,4,5,6,67};//integer Array of 6 (Starts from 0)
     int* arrayptr = arr;//Pointer to above array
-    printf("Value of arr[3] = %d\n", arr[3]);//prints value at position 3 of array
+
+    printf("Value of arr[3] = %d\n\n", arr[3]);//prints value at position 3 of array
+
+
     printf("The address of arr[0] %d \n", &arr[0]); //Gives address of array[0](311)
-    printf("The address of arr[0] = %d\n\n", arr);
-    printf("The address of arr[1] = %d\n", &arr[1]);
-    printf("The address of arr[0] + 1 (arr[1]) = %d \n\n", arr + 1);
-    printf("The address of arr[2] = %d\n", &arr[2]);
-    printf("The address of arr[0] + 2 (arr[2]) = %d\n\n", arr + 2);
+    printf("The address of arr[0] = %d\n\n", arr);//&arr[0]== arr;
+
+    printf("The address of arr[1] = %d\n", &arr[1]);//Prints address of Array 52
+    printf("The address of arr[0] + 1 (arr[1]) = %d \n\n", arr + 1);//Both are Same
+
+    printf("The address of arr[2] = %d\n", &arr[2]);//Prints address of array 3
+    printf("The address of arr[0] + 2 (arr[2]) = %d\n\n", arr + 2);//Both are Same
+
     // arr--; // this line will throw an error because array is constant 
    // arrayptr--; //This is acceptable
 
-    printf("The Value of arr[0] = %d \n", *(&arr[0]));
-    printf("The Value of arr[0] = %d \n", arr[0]);
-    printf("The Value of arr[0] = %d \n\n", *(arr));
+    printf("The Value of arr[0] = %d \n", arr[0]);//Prints 311
+    printf("The Value of arr[0] = %d \n", *&arr[0]); //Prints 311
+    printf("The Value of arr[0] = %d \n\n", *arr);//Prints 311
 
-    printf("The Value of arr[1] = %d \n", *(&arr[1]));
-    printf("The Value of arr[1] = %d \n", arr[1]);
-    printf("The Value of arr[1] = %d \n", *(arr + 1));
+    printf("The Value of arr[1] = %d \n", arr[1]);//Prints 52
+    printf("The Value of arr[1] = %d \n", *&arr[1]);//Prints 52
+    printf("The Value of arr[1] = %d \n", *(arr + 1));//Prints 52
     return 0;
 }
