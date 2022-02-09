@@ -1,5 +1,5 @@
 #include <stdio.h>
-int fibo(int num)
+int fibo(int num)//Formal Parameter
 {
     int n0 = 0, n1 = 1, a;
     /*fibo 0 1 1 2 3 5 8...*/
@@ -14,7 +14,7 @@ int fibo(int num)
 }
 int main()
 {
-    int num;
+    int num;//Actucal Parameter
     printf("Enter the Num = ");
     scanf("%d",&num);
     int b = fibo(num);
