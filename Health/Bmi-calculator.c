@@ -32,11 +32,19 @@ int main(int argc, char const *argv[])
     {
         printf("Hey! Look at you you are overweight nigga\n");
         printf("Join a Gym now if not no one will marry you 🤨\n");
+        double needweight = 24  * (m * m);
+        double lose = kg - needweight;
+        printf("You Need lose %.2lfkg weight\n", lose);
+        printf("Your body weight requriement %.2lfkg weight\n", needweight);
     }
     else if ((bmi >= 30.0))
     {
         printf("Hey! Why you are here... Look yourself\n");
-        printf("Do Some Hardwork in Life purse a gym 😟	 \n");
+        printf("Do Some Hardwork in Life purse a gym 😟	 \n\n");
+        double needweight = 24  * (m * m);
+        double lose = kg - needweight;
+        printf("You Need lose %.2lfkg weight ", lose);
+        printf("Your body weight requriement %.2lfkg weight ", needweight);
     }
     return 0;
 }
