@@ -1,5 +1,4 @@
 # Pointer in C
----
 Pointer Stores Address of another variable.Unlike other variables that hold values of a certain type, pointer holds the address of a variable.
 **Syntax**
 ```C
@@ -33,14 +32,14 @@ ec55d2c
 ```
 > **Note** You will probably get a different address when you run the above code.
 ---
-#### Decrementing & Incrementing Address
+#### Decrementing & Incrementing Addresses
 
-`int` stores 4 byte So, if we do `ptra--;` this do's `(247815468-4) = 247815464`
+`int` stores 4 byte So, if we do `ptra--;` this output is the The Address will decrement by 4 `(247815468-4) = 247815464`
 
-Same as, `char` data type stores 1 byte and we `ptra++;` The address will increment by 1(adds 1)
+Same as, `char` data type stores 1 byte and we `ptra++;` The address will increment by 1(adds 1) and Vice versa.
 
 ---
-### Pointer Array
+### Pointer to Array
 Let's Create Pointer to array
 ```C
 int arr[] = {4,2,3,1,9,6,5};

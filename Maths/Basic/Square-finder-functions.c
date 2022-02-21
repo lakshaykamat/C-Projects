@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <math.h>
-int squarefinder(int num){
-    int square = num * num ;
-    return square;
+int squarefinder(int num){// 2
+    int square = num * num ;//2 * 2
+    return square;//4
 }
 int main(){
-    int num;
+    int num;//let num = 2
     printf("Enter Num = ");
     scanf("%d",&num);
     //Maths Library Function
-    int b = squarefinder(num);
-    printf("Square of %d = %d",num,b);
+    int b = squarefinder(num);//b = 4
+    printf("Square of %d = %d",num,b);//2,4
 }
