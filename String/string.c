@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 void printStr(char str[])
 {
     int i = 0;
@@ -11,7 +12,7 @@ void printStr(char str[])
 }
 int main()
 {
-    char str[] = {'L', 'A', 'K', 'S', 'H', 'A', 'Y', '\0'};
+    // char str[] = {'L', 'A', 'K', 'S', 'H', 'A', 'Y', '\0'};
     char str[] = {"LAKSHAY"};
     printStr(str);
 
@@ -29,5 +30,12 @@ int main()
     puts(str);
     printf("\n");
     //************Printing String********************
+    if(strcmp(str , "LAKSHAY") == 0){
+        printf("Y");
+    }
+    else{
+        printf("N");
+
+    }
     return 0;
 }
