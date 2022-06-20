@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
     int marks[4];//array starts from 0 ex-[0,1,2,3,4]
 
     printf("Enter Your Marks (Out of 100)\n\n");
@@ -10,15 +9,21 @@ int main()
     sub1:
     printf("Subject1 = ");
     scanf("%d",&marks[0]);//Store value of array at 0
+
     while (1){
-    if (marks[0] <= 100 && marks[0] >= 0 ){
-        break;
-    }
-        else{
-            printf("Marks  in greater than 100! Or Marks is less than 0\n");
+        if (marks[0] < 0){
+            printf("Marks is less than zero !\n\n");
+            goto sub1;
+            break;
         }
-        goto sub1;
-        break;
+         else if (marks[0] > 100){
+            printf("Marks is greater than 100!\n\n");
+            goto sub1;
+            break;
+        }
+        else{
+            break;
+        }
     }
 
 
@@ -27,15 +32,21 @@ int main()
     printf("Subject 2= ");
     scanf("%d",&marks[1]);
     while (1){
-    if (marks[1] <= 100){
-        break;
-    }
-        else{
-            printf("Your marks in Greater than 100!\n");
+        if (marks[1] < 0){
+            printf("Marks is less than zero !\n\n");
+            goto sub2;
+            break;
         }
-        goto sub2;
-        break;
+         else if (marks[1] > 100){
+            printf("Marks is greater than 100!\n\n");
+            goto sub2;
+            break;
+        }
+        else{
+            break;
+        }
     }
+    
 
 
     //Subject 3 starts from here
@@ -43,14 +54,19 @@ int main()
     printf("Subject 3= ");
     scanf("%d",&marks[2]);
     while (1){
-    if (marks[2] <= 100){
-        break;
-    }
-        else{
-            printf("Your marks in Greater than 100!\n");
+        if (marks[2] < 0){
+            printf("Marks is less than zero !\n\n");
+            goto sub3;
+            break;
         }
-        goto sub3;
-        break;
+         else if (marks[2] > 100){
+            printf("Marks is greater than 100!\n\n");
+            goto sub3;
+            break;
+        }
+        else{
+            break;
+        }
     }
 
     //Subject 4 starts form here
@@ -58,14 +74,19 @@ int main()
     printf("Subject 4= ");
     scanf("%d",&marks[3]);
     while (1){
-    if (marks[3] <= 100){
-        break;
-    }
-        else{
-            printf("Your marks in Greater than 100!\n");
+        if (marks[3] < 0){
+            printf("Marks is less than zero !\n\n");
+            goto sub4;
+            break;
         }
-        goto sub4;
-        break;
+         else if (marks[3] > 100){
+            printf("Marks is greater than 100!\n\n");
+            goto sub4;
+            break;
+        }
+        else{
+            break;
+        }
     }
 
 
@@ -75,15 +96,21 @@ int main()
     scanf("%d",&marks[4]);
     printf("\n\n");
     while (1){
-    if (marks[4] <= 100){
-        break;
-    }
-        else{
-            printf("Your marks in Greater than 100!\n\n");
+        if (marks[4] < 0){
+            printf("Marks is less than zero !\n\n");
+            goto sub5;
+            break;
         }
-        goto sub5;
-        break;
+         else if (marks[4] > 100){
+            printf("Marks is greater than 100!\n\n");
+            goto sub5;
+            break;
+        }
+        else{
+            break;
+        }
     }
+
 printf("**************Results***************\n\n");
     printf("Subject 1 = %d\n",marks[0]);//Printing value of array of 0
     printf("Subject 2 = %d\n",marks[1]);
